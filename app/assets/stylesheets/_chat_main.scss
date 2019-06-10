@@ -32,7 +32,7 @@
       line-height: 40px;
       padding: 0 20px;
       margin-top: 30px;
-      border: solid 1px #38aef0;
+      border: solid 1px $btn-color;
       position: absolute;
       right: 40px;
     }
@@ -97,7 +97,7 @@
         height: 50px;
         padding: 0 30px;
         margin-left: 15px;
-        background-color: #38aef0;
+        background-color: $btn-color;
         color: white;
         cursor: pointer;
       }
