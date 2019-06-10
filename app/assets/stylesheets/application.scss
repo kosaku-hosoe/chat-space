@@ -5,4 +5,15 @@
 @import "./chat_main";
 *{
   box-sizing: border-box;
+  .flash-box{
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 100vw;
+    .notice{
+      background-color: $btn-color;
+    }
+  }
 }
+
