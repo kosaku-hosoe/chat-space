@@ -27,15 +27,7 @@
       %a(href="test")
         .main-header__edit-btn
           Edit
-    .messages
-      .message
-        .message__upper-info
-          %p.message__upper-info__talker
-            name
-          %p.message__upper-info__date
-            2019/06/07(Fri) 15:32:45
-        %p.message__text
-          test
+    = render partial: 'messages'
     .form
       = form_tag do
         .input-box
