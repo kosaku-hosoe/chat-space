@@ -29,7 +29,7 @@
           Edit
     = render partial: 'messages'
     .form
-      = form_tag ({:multipart => true}) do
+      = form_tag (multipart ="true") do
         .input-box
           %input.input-box__text(name ="message[content]" type="text" placeholder="type a message")/
           %label.input-box__image(for="message_image")
