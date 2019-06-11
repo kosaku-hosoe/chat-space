@@ -29,12 +29,12 @@
           Edit
     = render partial: 'messages'
     .form
-      = form_tag do
+      = form_tag ({:multipart => true}) do
         .input-box
-          %input.input-box__text(type="text" placeholder="type a message")/
+          %input.input-box__text(name ="message[content]" type="text" placeholder="type a message")/
           %label.input-box__image(for="message_image")
             %i.fa.fa-image
-            %input.input-box__image__file(type="file")/
+            %input#message_image.input-box__image__file(name="message[image]" type="file")/
         %input.submit-btn(type="submit" value="Send" )/
         
         
