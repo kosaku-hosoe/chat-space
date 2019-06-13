@@ -1,0 +1,8 @@
+@mixin flexbox
+{
+ display:-webkit-box; // old
+ display:-moz-box; // old
+ display:-ms-flexbox; // ie
+ display:-webkit-flex; // new
+ display:flex; // new
+ }
