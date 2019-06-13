@@ -1,0 +1,29 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group 
+        グループ名
+      %ul.main-header__left-box__member-list
+        Member：
+        %li.main-header__left-box__member-list__member
+          name
+    %a(href="test")
+      .main-header__edit-btn
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          name
+        %p.message__upper-info__date
+          2019/06/07(Fri) 15:32:45
+      %p.message__text
+        test
+  .form
+    = form_tag (multipart ="true") do
+      .input-box
+        %input.input-box__text(name ="message[content]" type="text" placeholder="type a message")/
+        %label.input-box__image(for="message_image")
+          %i.fa.fa-image
+          %input#message_image.input-box__image__file(name="message[image]" type="file")/
+      %input.submit-btn(type="submit" value="Send" )/

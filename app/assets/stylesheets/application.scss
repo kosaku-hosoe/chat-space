@@ -1,11 +1,13 @@
 @import "font-awesome";
 @import "config/colors";
 @import "config/reset";
+@import "mixins/mixin";
 @import "modules/flash";
 @import "modules/user";
 @import "modules/chat-side";
 @import "modules/chat_main";
-@import "modules/group.scss";
+@import "modules/chat";
+@import "modules/group";
 *{
   box-sizing: border-box;
 }
